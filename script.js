@@ -77,12 +77,25 @@ function generateImage() {
     // Draw the image on the canvas
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
+    // Create gradient for text
+    var x0 = canvas.width * 0.4781; // 47.81% converted to decimal
+    var y0 = canvas.height * 0.4781; // 47.81% converted to decimal
+    var r0 = 0; // Inner radius
+    var x1 = canvas.width * 0.5219; // 52.19% converted to decimal
+    var y1 = canvas.height * 0.5; // 50% converted to decimal
+    var r1 = Math.min(canvas.width, canvas.height) * 0.25; // Adjusted size
+
+    var gradient = ctx.createRadialGradient(x0, y0, r0, x1, y1, r1);
+    gradient.addColorStop(0, '#F8FAFC');
+    gradient.addColorStop(1, '#94A3B8');
+
+    // Set gradient as fill style for text
+    ctx.fillStyle = gradient;
+
     // Draw text on top of the image
     ctx.font = 'bold 128px Inter';
-    ctx.fillStyle = 'white'; // Set text color to white
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.textShadow = '0px 6px 28px rgba(215, 215, 215, 0.45)';
     ctx.fillText(formattedTaxAmount, canvas.width / 2, 700);
 
     // Convert canvas to data URL with JPEG format
@@ -97,7 +110,7 @@ function generateImage() {
     // Share the file
     navigator.share({
       title: 'genocide.fund.jpg',
-      text: 'Check out this cool campaign I found!',
+      text: 'The U.S. will give $18.3 billion of taxpayer money to Israel this year. How much of it is yours?',
       files: [file]
     })
     .then(() => console.log('Shared successfully'))
