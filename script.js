@@ -14,6 +14,7 @@ openDisclosure.addEventListener('click', () => {
 
 
 const submitBtn = document.getElementById('submit-btn');
+const deltaDiv = document.getElementById('delta');
 const resultDiv = document.getElementById('result');
 const resultsBlock = document.getElementById('results-block');
 const intro = document.getElementById('intro');
@@ -34,11 +35,14 @@ const calculateTaxes = (e) => {
   e.preventDefault();
 
   const taxAmountInput = document.getElementById('tax-amount');
-  taxAmount = 0.008270232041 * Number(taxAmountInput.value.replace(/[^0-9.]/g, ''));
+  cleanAmount = Number(taxAmountInput.value.replace(/[^0-9.]/g, ''));
+  taxAmount = 0.008277 * cleanAmount;
+  const delta2022 = taxAmount - 0.00172970916 * cleanAmount;
 
   formattedTaxAmount = formatCurrency(taxAmount);
 
   resultDiv.textContent = `${formattedTaxAmount}`;
+  deltaDiv.textContent = `${delta2022.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}`;
   donateAmount.textContent = `${formattedTaxAmount}`;
   resultsBlock.classList.remove('hidden');
   formWrapper.classList.add('hidden');           
@@ -47,7 +51,7 @@ const calculateTaxes = (e) => {
   linkedInShare.href= `https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgenocide.tax%2F&title=Calculate%20Your%20Genocide%20Tax%20Amount&summary=In%202023%2C%20my%20U.S%20taxes%20gave%20${encodeURIComponent(formattedTaxAmount)}%20to%20Israel%20to%20kill%2030%2C000%20Palestinians%20in%20Gaza.&source=`
   whatsAppShare.href= `https://api.whatsapp.com/send?text=In%202023%2C%20my%20U.S%20taxes%20gave%20${encodeURIComponent(formattedTaxAmount)}%20to%20Israel%20to%20kill%2030%2C000%20Palestinians%20in%20Gaza.%20Calculate%20your%20genocide%20tax%20amount%20at%20https%3A%2F%2Fgenocide.tax%2F
 `
-  fbShare.href= `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://f82a4daf-a628-46d3-ab11-bd67e1d69bd5-00-1s605t1h4tb4l.picard.replit.dev/?tax-amount")}F`
+  fbShare.href= `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://genocide.tax")}`
 
 };
 
