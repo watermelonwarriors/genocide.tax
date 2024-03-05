@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Genocide.tax - How much did you give to genocide?">
+  <meta property="og:description"
+    content="The U.S. will give $18.3 billion of taxpayer money to Israel this year. How much of it is yours?">
+  <meta property="og:image" content="https://genocide.tax/og-image.png">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-slate-200 antialiased text-base md:text-lg">
+  <div class="min-h-screen flex items-center justify-center bg-slate-950">
+    <div
+      class="w-full max-w-[550px] grow shrink basis-0 self-stretch flex-col justify-center items-center gap-8 inline-flex p-4">
+      <h1
+        style="background: radial-gradient(47.81% 47.81% at 52.19% 50%, #F8FAFC 0%, #94A3B8 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+        class="text-center text-slate-50 text-5xl md:text-7xl font-normal font-['Staatliches'] ">Genocide.tax</h1>
+      <div id="intro" class="text-center">
+        <strong class="text-slate-200 font-bold">The U.S. will give $18.3 billion in aid to Israel this year.</strong>
+        <p class="text-slate-200 font-normal leading-7">Have your tax dollars been funding genocide?</p>
+      </div>
+      <div id="results-block"
+        class="hidden text-slate-200 flex-col justify-center items-center gap-y-16 inline-flex text-center ">
+        <div class="flex flex-col gap-y-8">
+          <div>In 2023, you gave</div>
+          <div id="result" class="text-6xl md:text-8xl font-extrabold text-slate-200"
+            style="background: radial-gradient(47.81% 47.81% at 52.19% 50%, #F8FAFC 0%, #94A3B8 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent">
+          </div>
+          to help the U.S. fund Israel’s genocide of Palestinians.
+          <div>That’s enough to buy 5 9mm cartridges, used in American-made Ingram MAC-10s used by the IDF. </div>
+          <div class="font-bold">Since October 7, 2023, Israel has killed 30,035 Palestinians.</div>
+        </div>
+        <div class="flex flex-col gap-y-8">
+          <div class="text-2xl md:text-3xl self-stretch font-bold">Share your results</div>
+          <div class="self-stretch justify-center items-center gap-4 inline-flex">
+            <a id="x-share" href="" tabindex="4"
+              class="grow h-[52px] px-4 py-4 bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 rounded-lg shadow justify-center items-center gap-2 inline-flex shadow-[0px_6px_28px_0px_rgba(215,215,215,0.45)] hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] text-center text-slate-950 font-bold leading-7">
+              <div class="w-[22px] h-5 relative"><svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_0_35)">
+                    <path
+                      d="M17.3066 0H20.68L13.2733 8.48708L21.9266 20H15.136L9.81931 13.0037L3.73265 20H0.359312L8.20598 10.9225L-0.0806885 0H6.87865L11.682 6.39114L17.3066 0ZM16.126 18.0074H17.996L5.89598 1.91882H3.88665L16.126 18.0074Z"
+                      fill="#020617" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_0_35">
+                      <rect width="22" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+            <a id="fb-share" href="" tabindex="5"
+              class="grow h-[52px] px-4 py-4 bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 rounded-lg shadow justify-center items-center gap-2 inline-flex shadow-[0px_6px_28px_0px_rgba(215,215,215,0.45)] hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] text-center text-slate-950 font-bold leading-7">
+              <div class="w-[24.63px] h-[24.63px] relative"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_0_38)">
+                    <mask id="mask0_0_38" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-5" y="-5"
+                      width="36" height="36">
+                      <path d="M-4.24097 -4.2409H30.2409V30.2409H-4.24097V-4.2409Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_0_38)">
+                      <path
+                        d="M25.3149 13C25.3149 6.19865 19.8013 0.685062 13 0.685062C6.19865 0.685062 0.685059 6.19865 0.685059 13C0.685059 18.7755 4.66106 23.6215 10.025 24.9523V16.7632H7.48557V13H10.025V11.3784C10.025 7.1868 11.9219 5.244 16.0371 5.244C16.8172 5.244 18.1635 5.39695 18.7142 5.54995V8.96139C18.4235 8.9308 17.9187 8.91548 17.2915 8.91548C15.2722 8.91548 14.4919 9.68038 14.4919 11.6691V13H18.5144L17.8234 16.7632H14.4919V25.2247C20.5896 24.4882 25.3149 19.2963 25.3149 13Z"
+                        fill="#020617" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_0_38">
+                      <rect width="24.6299" height="24.6299" fill="white" transform="translate(0.685059 0.685059)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+            <a id="whatsapp-share" href="" tabindex="5"
+              class="grow h-[52px] px-4 py-4 bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 rounded-lg shadow justify-center items-center gap-2 inline-flex shadow-[0px_6px_28px_0px_rgba(215,215,215,0.45)] hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] text-center text-slate-950 font-bold leading-7">
+              <div class="w-[24.63px] h-[24.63px] relative"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_37)">
+                    <path
+                      d="M18.9099 14.8377C18.8619 14.8147 17.0663 13.9305 16.7473 13.8157C16.617 13.7689 16.4775 13.7232 16.329 13.7232C16.0866 13.7232 15.8829 13.8441 15.7242 14.0814C15.5449 14.348 15.0019 14.9827 14.8341 15.1723C14.8122 15.1973 14.7823 15.2273 14.7644 15.2273C14.7483 15.2273 14.4704 15.1128 14.3863 15.0763C12.4601 14.2396 10.9981 12.2275 10.7976 11.8882C10.769 11.8394 10.7678 11.8173 10.7675 11.8173C10.7746 11.7914 10.8393 11.7265 10.8728 11.693C10.9706 11.5962 11.0765 11.4687 11.1791 11.3453C11.2276 11.2869 11.2762 11.2283 11.324 11.1731C11.4727 11.0001 11.5389 10.8657 11.6157 10.7101L11.6559 10.6293C11.8433 10.2569 11.6832 9.9426 11.6315 9.84112C11.589 9.7562 10.8309 7.92638 10.7503 7.73414C10.5564 7.27024 10.3003 7.05425 9.94435 7.05425C9.91132 7.05425 9.94435 7.05425 9.80585 7.06009C9.6372 7.06721 8.71877 7.18812 8.31269 7.44409C7.88207 7.71558 7.15356 8.58099 7.15356 10.1029C7.15356 11.4727 8.02281 12.766 8.39602 13.2579C8.4053 13.2703 8.42233 13.2955 8.44704 13.3316C9.8763 15.4189 11.6581 16.9658 13.4643 17.6874C15.2032 18.382 16.0266 18.4623 16.4947 18.4623H16.4948C16.6915 18.4623 16.849 18.4468 16.9879 18.4332L17.076 18.4248C17.6767 18.3715 18.9968 17.6875 19.2971 16.853C19.5337 16.1957 19.596 15.4776 19.4387 15.217C19.3309 15.0398 19.1451 14.9506 18.9099 14.8377Z"
+                      fill="#020617" />
+                    <path
+                      d="M13.2187 0.684998C6.5481 0.684998 1.12118 6.07113 1.12118 12.6916C1.12118 14.8329 1.69423 16.9289 2.77979 18.7633L0.701993 24.8924C0.663289 25.0067 0.692077 25.1331 0.776603 25.2191C0.837618 25.2814 0.920384 25.315 1.00491 25.315C1.0373 25.315 1.06992 25.3101 1.10175 25.3L7.49276 23.2691C9.24165 24.2035 11.2183 24.6968 13.2188 24.6968C19.8887 24.6968 25.315 19.3113 25.315 12.6916C25.315 6.07113 19.8887 0.684998 13.2187 0.684998ZM13.2187 22.1958C11.3363 22.1958 9.51314 21.6522 7.94593 20.6239C7.89323 20.5892 7.83206 20.5715 7.77048 20.5715C7.73794 20.5715 7.70531 20.5764 7.67356 20.5865L4.47206 21.6042L5.50556 18.5551C5.53899 18.4564 5.52228 18.3476 5.4607 18.2635C4.26727 16.6328 3.6364 14.7061 3.6364 12.6916C3.6364 7.45025 7.93498 3.18606 13.2186 3.18606C18.5016 3.18606 22.7997 7.45025 22.7997 12.6916C22.7997 17.9322 18.5017 22.1958 13.2187 22.1958Z"
+                      fill="#020617" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6_37">
+                      <rect width="24.63" height="24.63" fill="white" transform="translate(0.685059 0.684998)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </div>
+            </a>
+            <a id="linkedin-share" href="" tabindex="6"
+              class="grow h-[52px] px-4 py-4 bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 rounded-lg shadow justify-center items-center gap-2 inline-flex shadow-[0px_6px_28px_0px_rgba(215,215,215,0.45)] hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] text-center text-slate-950 font-bold leading-7">
+              <div class="w-6 h-6 relative"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.0805 3.17787e-05H2.05383C1.79571 -0.0120593 1.53771 0.0268694 1.29465 0.114612C1.05158 0.202354 0.828213 0.33717 0.637307 0.511335C0.446416 0.685515 0.291737 0.895638 0.182153 1.12966C0.0725688 1.36369 0.0102082 1.61703 -0.00134277 1.87519V21.9469C0.0137785 22.4871 0.235167 23.0012 0.617355 23.3833C0.999542 23.7656 1.51355 23.987 2.05383 24.0021H22.0805C22.6057 23.9787 23.1009 23.7504 23.4599 23.3662C23.8189 22.982 24.013 22.4726 24.0007 21.9469V1.87519C24.0051 1.62392 23.9579 1.37443 23.8624 1.142C23.7668 0.909589 23.6248 0.699136 23.4449 0.523546C23.2652 0.347971 23.0514 0.21098 22.8168 0.120957C22.5822 0.0309348 22.3317 -0.0102141 22.0805 3.17787e-05ZM7.4993 20.0118H4.004V9.31587H7.4993V20.0118ZM5.83415 7.69569C5.59025 7.70419 5.34721 7.66216 5.12033 7.57224C4.89344 7.48233 4.68759 7.34646 4.51574 7.17318C4.34387 6.9999 4.20968 6.79296 4.12162 6.56534C4.03355 6.33773 3.99351 6.09436 4.004 5.85053C3.99321 5.60406 4.03406 5.35807 4.12393 5.12832C4.21381 4.89856 4.35071 4.69014 4.52585 4.51641C4.701 4.34266 4.91053 4.20746 5.14099 4.11946C5.37147 4.03145 5.61779 3.99259 5.86416 4.00537C6.10806 3.99688 6.3511 4.0389 6.57798 4.12882C6.80487 4.21874 7.01072 4.3546 7.18257 4.52788C7.35444 4.70116 7.48863 4.90811 7.57669 5.13572C7.66476 5.36333 7.7048 5.6067 7.69431 5.85053C7.7051 6.097 7.66425 6.34299 7.57438 6.57274C7.4845 6.8025 7.3476 7.01093 7.17246 7.18466C6.99731 7.3584 6.78779 7.49361 6.55732 7.5816C6.32684 7.66962 6.08052 7.70847 5.83415 7.69569ZM20.0104 20.0118H16.5001V14.1613C16.5001 12.7662 16.005 11.8061 14.7599 11.8061C14.3732 11.8094 13.9968 11.9322 13.6827 12.1579C13.3684 12.3835 13.1317 12.7008 13.0048 13.0662C12.9073 13.3401 12.8665 13.631 12.8848 13.9213V20.0118H9.43446V9.31587H12.8848V10.816C13.1915 10.2524 13.648 9.78466 14.204 9.46423C14.7599 9.14396 15.3936 8.98356 16.035 9.0008C18.3002 9.0008 20.0104 10.501 20.0104 13.6962V20.0118Z"
+                    fill="#020617" />
+                </svg>
+
+              </div>
+            </a>
+            <a id="ig-share" tabindex="6"
+              class="md:hidden grow h-[52px] px-4 py-4 bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 rounded-lg shadow justify-center items-center gap-2 inline-flex shadow-[0px_6px_28px_0px_rgba(215,215,215,0.45)] hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] text-center text-slate-950 font-bold leading-7">
+              <div class="w-6 h-6 relative"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_51)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7.04359 0.147275C5.09013 0.235415 3.39698 0.713011 2.02979 2.07442C0.657834 3.44299 0.18617 5.14285 0.0978101 7.07599C0.0428837 8.28256 -0.278297 17.398 0.653059 19.7885C1.28113 21.4012 2.51813 22.6412 4.14561 23.2713C4.90503 23.5667 5.77193 23.7666 7.04359 23.825C17.6766 24.3062 21.6181 24.0442 23.2802 19.7885C23.5751 19.0309 23.7781 18.1648 23.8342 16.8963C24.3202 6.23605 23.7555 3.92538 21.9023 2.07442C20.4324 0.608191 18.7034 -0.389905 7.04359 0.147275ZM7.14147 21.6811C5.97728 21.6286 5.34564 21.4347 4.92414 21.2715C3.86383 20.8594 3.0674 20.0662 2.65784 19.0121C1.94858 17.1957 2.18382 8.56863 2.2471 7.17267C2.30919 5.80529 2.58621 4.55561 3.551 3.59083C4.74504 2.39973 6.28773 1.81599 16.7918 2.29005C18.1625 2.35198 19.4151 2.62843 20.3823 3.59083C21.5763 4.78191 22.1686 6.33648 21.6862 16.8002C21.6336 17.9615 21.439 18.5917 21.2754 19.0121C20.1948 21.7814 17.7088 22.1658 7.14147 21.6811ZM16.9076 5.62755C16.9076 6.41606 17.5488 7.05724 18.3405 7.05724C19.1321 7.05724 19.7745 6.41606 19.7745 5.62755C19.7745 4.83905 19.1321 4.19845 18.3405 4.19845C17.5488 4.19845 16.9076 4.83905 16.9076 5.62755ZM5.8352 11.9856C5.8352 15.3635 8.58032 18.1022 11.9666 18.1022C15.3529 18.1022 18.0981 15.3635 18.0981 11.9856C18.0981 8.60763 15.3529 5.87071 11.9666 5.87071C8.58032 5.87071 5.8352 8.60763 5.8352 11.9856ZM7.98687 11.9856C7.98687 9.79396 9.7684 8.01583 11.9666 8.01583C14.1649 8.01583 15.9464 9.79396 15.9464 11.9856C15.9464 14.1784 14.1649 15.957 11.9666 15.957C9.7684 15.957 7.98687 14.1784 7.98687 11.9856Z"
+                      fill="#020617" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6_51">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-8">
+          <div class="text-2xl md:text-3xl self-stretch font-bold">Take action</div>
+          <div
+            class="self-stretch p-6 bg-slate-800 rounded-2xl flex-col gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+            <div class="w-full text-left flex-col items-left gap-6 flex text-slate-200 font-normal leading-7">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-xl md:text-2xl self-stretch font-bold">Donate Humanitarian Relief to Gaza</div>
+                <div>Give at least <span id="donate-amount" class="font-bold"> </span> to offset how much you gave to
+                  genocide.</div>
+              </div>
+              <a tabindex="7"
+                href="https://www.launchgood.com/communitypage/support_palestinians_in_gaza#!/community/support_palestinians_in_gaza/"
+                class="bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 self-stretch px-4 py-3 rounded-lg justify-center items-center gap-2 inline-flex">
+                <div class="text-center text-slate-950 font-bold leading-7">Donate Now</div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="self-stretch p-6 bg-slate-800 rounded-2xl flex-col gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+            <div class="w-full text-left flex-col left gap-6 flex text-slate-200 font-normal leading-7">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-xl md:text-2xl self-stretch font-bold">Donate an eSIM to a Gazan</div>
+                <div>Powered by <a href="https://watermelonwarriors.io" class="underline">watermelonwarriors.io</a>.
+                </div>
+              </div>
+              <a tabindex="7" href="https://donate.stripe.com/bIY3dqbHZgzT7sc9AE"
+                class="bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 self-stretch px-4 py-3 rounded-lg justify-center items-center gap-2 inline-flex">
+                <div class="text-center text-slate-950 font-bold leading-7">Donate Now</div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="self-stretch p-6 bg-slate-800 rounded-2xl flex-col gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+            <div class="w-full text-left flex-col left gap-6 flex text-slate-200 font-normal leading-7">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-xl md:text-2xl self-stretch font-bold">Write Your Representatives to Call for a
+                  Ceasefire
+                </div>
+                <div>Fill in simple prompts, and AI will create a powerful, personalized letter. Powered by <a
+                    href="https://watermelonwarriors.io" class="underline">watermelonwarriors.io</a>.</div>
+              </div>
+              <a tabindex="8"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfWhN6zakjkiElS7AmYBoEH49K01KZhGoev6_9OLYVcMMJArA/viewform"
+                class="bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 self-stretch px-4 py-3 rounded-lg justify-center items-center gap-2 inline-flex">
+                <div class="text-center text-slate-950 font-bold leading-7">Donate Now</div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="self-stretch p-6 bg-slate-800 rounded-2xl flex-col gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+            <div class="w-full text-left flex-col left gap-6 flex text-slate-200 font-normal leading-7">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-xl md:text-2xl self-stretch font-bold">#AbandonBiden: Vote Uncommitted in the Democratic Primaries
+                </div>
+                <div>Send a message by voting "Uncommitted" in the upcoming presidential primaries in protest of Joe Biden's support for genocide.</div>
+              </div>
+              <a tabindex="8"
+                href="https://abandonbiden.notion.site/2024-Elections-Vote-Uncommitted-dd3083e354c84c3cb94d45fa52f1b8ee?pvs=4"
+                class="bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 self-stretch px-4 py-3 rounded-lg justify-center items-center gap-2 inline-flex">
+                <div class="text-center text-slate-950 font-bold leading-7">Learn More</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" tabindex="0" id="get-started-btn"
+        class="px-4 py-3 bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 rounded-lg shadow justify-center items-center gap-2 inline-flex shadow-[0px_6px_28px_0px_rgba(215,215,215,0.45)] hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] text-center text-slate-950 font-bold leading-7">
+        Get Started</button>
+      <div id="form-wrapper"
+        class="hidden p-6 bg-slate-800 rounded-2xl flex-col justify-end items-end gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+        <div class="self-stretch flex-col items-center gap-2 flex text-slate-200 font-normal leading-7">
+          <div class="text-xl md:text-2xl self-stretch font-bold">How much did you pay in federal taxes in 2023?</div>
+          <div>You can find this information in Line 24 of your 2023 Form 1040. <a tabindex="1" id="open-disclosure"
+              class="transition-all ease-in-out duration-500 underline hover:text-slate-400 hover:cursor-pointer">Haven’t
+              filed yet?</a><span id="disclosure-text" class="hidden"> You can also check your final 2023 paystub to see
+              how much you gave in federal income tax.</span></div>
+        </div>
+        <form class="flex self-stretch flex-col gap-y-4">
+          <div
+            class="flex self-stretch bg-slate-600 px-4 py-3 rounded-lg shadow-sm focus-within:ring-2 focus-within:ring-inset focus-within:ring-slate-600">
+            <span class="flex select-none items-center text-slate-200">$</span>
+            <input tabindex="2" inputmode="numeric" type="text" name="tax-amount" id="tax-amount"
+              class="block flex-1 bg-slate-600 border-0 pl-1 text-slate-200 placeholder:text-slate-400 focus:ring-0"
+              placeholder="0">
+          </div>
+          <div class="self-stretch flex-col justify-end items-end gap-4 flex">
+            <button tabindex="3" id="submit-btn" type="submit"
+              class="bg-slate-400 hover:bg-slate-50 hover:shadow-[0px_0px_64px_0px_rgba(215,215,215,0.65)] transition-all ease-in-out duration-500 self-stretch px-4 py-3 rounded-lg justify-center items-center gap-2 inline-flex">
+              <div class="text-center text-slate-950 font-bold leading-7">Submit</div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    <form>
+      <label for="taxes-paid">Taxes Paid:</label>
+      <input type="number" id="taxes-paid">
+      <br>
+      <label for="gross-income">Gross Income:</label>
+      <input type="number" id="gross-income">
+      <br>
+      <input type="submit" value="Calculate">
+    </form>
+    <br>
+    -->
+  <script src="script.js"></script>
+</body>
+
+</html>
