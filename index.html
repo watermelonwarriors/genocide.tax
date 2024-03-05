@@ -18,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Staatliches&display=swap"
     rel="stylesheet">
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -25,9 +28,9 @@
   <div class="min-h-screen flex items-center justify-center bg-slate-950">
     <div
       class="w-full max-w-[550px] grow shrink basis-0 self-stretch flex-col justify-center items-center gap-8 inline-flex p-4">
-      <h1
+      <a href="/"><h1
         style="background: radial-gradient(47.81% 47.81% at 52.19% 50%, #F8FAFC 0%, #94A3B8 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-        class="shine-effecttext-center text-slate-50 text-5xl md:text-7xl font-normal font-['Staatliches'] ">Genocide.tax</h1>
+        class="shine-effecttext-center text-slate-50 text-5xl md:text-7xl font-normal font-['Staatliches'] ">Genocide.tax</h1></a>
       <div id="intro" class="text-center">
         <strong class="text-slate-200 font-bold">The U.S. will give $18.3 billion in aid to Israel this year.</strong>
         <p class="text-slate-200 font-normal leading-7">Have your tax dollars been funding genocide?</p>
@@ -199,6 +202,31 @@
                 class="bg-slate-400 hover:bg-slate-50 transition-all ease-in-out duration-500 self-stretch px-4 py-3 rounded-lg justify-center items-center gap-2 inline-flex">
                 <div class="text-center text-slate-950 font-bold leading-7">Learn More</div>
               </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-8">
+          <div class="text-2xl md:text-3xl self-stretch font-bold">How was this calculated?</div>
+          <div
+            class="self-stretch p-6 bg-slate-800 rounded-2xl flex-col gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+            <div class="w-full text-left flex-col items-left gap-6 flex text-slate-200 font-normal leading-7">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-xl md:text-2xl self-stretch font-bold">Sources</div>
+                <div>We use public data from the <a class="underline" href="https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government">U.S. Department of the Treasury</a> to find the total individual taxpayer revenue. For figures related to annual U.S. aid to Israel, we referred to archives from the <a href="https://obamawhitehouse.archives.gov/the-press-office/2016/09/14/fact-sheet-memorandum-understanding-reached-israel">Obama Administration</a> and latest figures about the proposed emergency aid to Israel are from the <a class="underline" href="https://www.congress.gov/bill/118th-congress/house-bill/815/text">text of H.R. 815 bill.</a></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="self-stretch p-6 bg-slate-800 rounded-2xl flex-col gap-6 inline-flex [background:radial-gradient(93.32%_93.32%_at_50%_93.32%,#1E293B_0%,#0F172A_100%)]">
+            <div class="w-full text-left flex-col items-left gap-6 flex text-slate-200 font-normal leading-7">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-xl md:text-2xl self-stretch font-bold">Calculation</div>
+                <div>We use the following formula to calculate the result amount:<br/><br/>
+                  <div style="max-width: 100%; overflow-x: scroll">
+                    <img src="equation.svg"/>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
